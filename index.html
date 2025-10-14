@@ -9,18 +9,19 @@
 </head>
 
 <body>
-  <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" fog="color: #6262fe; density: -0.19; far: 965.25; near: 0.42; type: exponential">
+  <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" fog="color: #6262fe; density: 5.78; far: 5.92; near: 0">
     <a-assets>
       <a-assets-item id="GP" src="assets/GP.glb"></a-assets-item>
       <a-assets-item id="ST" src="assets/ST.glb"></a-assets-item>
       <a-assets-item id="DC" src="assets/DC.glb"></a-assets-item>
       <a-assets-item id="CRT" src="assets/CRT.glb"></a-assets-item>
       <a-assets-item id="BT" src="assets/BT.glb"></a-assets-item>
+      <a-assets-item id="Lantern" src="assets/Lantern.glb"></a-assets-item>
     </a-assets>
 
 
 
-    <a-entity position="0 -0.108 0">
+    <a-entity position="0 -0.25946 0">
       <a-entity>
         <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0" shadow="receive: false"></a-entity>
         <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0" shadow="receive: false"></a-entity>
@@ -140,15 +141,15 @@
     <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" scale="5.09 5.75 1" color="#5e3f1d"></a-plane>
     <a-entity>
       <a-entity gltf-model="assets/CRT.glb" position="1.90598 0.26832 -2.72007" rotation="0 -118.96000000000001 0"></a-entity>
-      <a-entity light="color: blue; intensity: 0.16; type: point" position="0.4556 0.51369 -3.66875"></a-entity>
+      <a-entity light="color: blue; intensity: 0.16; type: point" position="2.26441 0.51369 -2.4966"></a-entity>
 
     </a-entity><a-entity position="-5.57781 0 -4.64697" rotation="0 -95.99506786960352 0">
       <a-entity gltf-model="assets/CRT.glb" position="1.06038 0.26832 -2.86808" rotation="0 -118.96000000000001 0"></a-entity>
-      <a-entity light="color: blue; intensity: 0.16; type: point" position="0.4556 0.51369 -3.66875"></a-entity>
+      <a-entity light="color: blue; intensity: 0.16; type: point" position="-0.8959 0.51369 -3.31355"></a-entity>
 
     </a-entity><a-entity position="-2.40941 0 -6.99434" rotation="0 -95.99506786960352 0">
       <a-entity gltf-model="assets/CRT.glb" position="0.06339 0.26832 -3.32256" rotation="0 -118.96000000000001 0"></a-entity>
-      <a-entity light="color: blue; intensity: 0.16; type: point" position="0.4556 0.51369 -3.66875"></a-entity>
+      <a-entity light="color: blue; intensity: 0.16; type: point" position="0.51377 0.51369 -3.11487"></a-entity>
 
     </a-entity><a-entity position="4.79287 0 0.02279" rotation="0 68.40084749830794 0">
       <a-entity gltf-model="assets/CRT.glb" position="0 0.26832 -3.92616" rotation="0 -118.96000000000001 0"></a-entity>
@@ -156,7 +157,7 @@
 
     </a-entity><a-entity position="-6.03396 0 -2.69322" rotation="0 -40.99341136822501 0">
       <a-entity gltf-model="assets/CRT.glb" position="0.84835 0.26832 -4.66345" rotation="0 -118.96000000000001 0"></a-entity>
-      <a-entity light="color: blue; intensity: 0.16; type: point" position="0.4556 0.51369 -3.66875"></a-entity>
+      
 
     </a-entity><a-entity position="-1.50216 0 -2.69322" rotation="0 -65.45240668456472 0">
       <a-entity gltf-model="assets/CRT.glb" position="0 0.26832 -3.92616" rotation="0 -118.96000000000001 0"></a-entity>
@@ -169,11 +170,12 @@
     </a-entity>
 
     <a-entity gltf-model="assets/BT.glb" scale="4 4 4" position="0.81139 4.85617 -3.51848"></a-entity>
+    <a-entity gltf-model="assets/Lantern.glb" position="0.81139 4.85617 -3.51848"></a-entity>
 
     <a-sky color="blue"></a-sky>
-    <a-camera position="-5.216869014126058 1.6 -4.9571216312259745" rotation="-7.90681757280536 -101.2989381791296 0" fov="70">
+    <a-camera position="-4.411849453621513 1.6 0.2802604709850768" rotation="1.0313240312354828 -409.3210488414581 0" fov="70">
     </a-camera>
-  <a-entity light="color: #560075; groundColor: #000000; intensity: 1.06; type: hemisphere" position="0 2.23379 0"></a-entity></a-scene>
+  <a-entity light="color: #000000; groundColor: #000000; intensity: 2.5; type: hemisphere" position="0 2.23379 0"></a-entity><a-entity geometry="primitive: cylinder" position="0.44579 9.81805 -3.48274" scale="4 1 4"></a-entity></a-scene>
 </body>
 
 </html>
