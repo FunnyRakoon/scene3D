@@ -8,6 +8,10 @@
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <a-assets-item id="Chicken" src="assets/Chicken.glb"></a-assets-item>
+      </a-assets>
+      <a-entity gltf-model="#Chicken" position="0 0 -4" scale="0.01 0.01 0.01"></a-entity>
       <a-box position="0.0121 2.88434 -4.99292" rotation="0 45 0" color="#4CC3D9"></a-box>
       <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
       <a-cylinder position="-0.01721 4.10525 -4.95216" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
