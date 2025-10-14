@@ -1,31 +1,152 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Ma première scène A-Frame</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
-  </head>
-  <body>
-    <a-scene>
-      <a-assets>
-        <a-assets-item id="Chicken" src="assets/Chicken.glb"></a-assets-item>
-        <a-assets-item id="PS" src="assets/PS.glb"></a-assets-item>
-      </a-assets>
-      <a-entity gltf-model="#Chicken" position="0 0 -4" scale="0.01 0.01 0.01"></a-entity>
-      <a-entity gltf-model="#PS" position="-0.738 1.505 -4.000" rotation="0 90 0" scale="0.424 0.424 0.424"></a-entity>
-      <a-box position="0.0121 2.88434 -4.99292" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-cylinder position="-0.01721 4.10525 -4.95216" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-cylinder position="-0.01721 4.10525 -4.95216" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane
-        position="0 0 -4"
-        rotation="-90 0 0"
-        width="4"
-        height="4"
-        color="#7BC8A4"
-      ></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-      <a-camera> </a-camera>
-    </a-scene>
-  </body>
+
+<head>
+  <title>Ma première scène A-Frame</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+</head>
+
+<body>
+  <a-scene keyboard-shortcuts="" screenshot="" xr-mode-ui="" device-orientation-permission-ui="" fog="color: #6262fe; density: -0.11; far: 965.25; near: 0.57; type: exponential">
+    <a-assets>
+      <a-assets-item id="GP" src="assets/GP.glb"></a-assets-item>
+      <a-assets-item id="ST" src="assets/ST.glb"></a-assets-item>
+      <a-assets-item id="DC" src="assets/DC.glb"></a-assets-item>
+      <a-assets-item id="CRT" src="assets/CRT.glb"></a-assets-item>
+    </a-assets>
+
+    <a-entity light="color: #ff0000; intensity: 0.16; type: point" position="0.4556 0.51369 -3.66875"></a-entity>
+
+    <a-entity position="0 -0.108 0">
+      <a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 -2.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 -4.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 -6.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 -8.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 2.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 4.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="2.65996 0 0.04847" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="2.65996 0 -8.76328" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="-9.99196 0 -8.76328" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="-11.72687 0 -8.76328" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="-11.72687 0 -0.32454" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity><a-entity position="-9.41262 0 -0.32454" rotation="0 -90 0">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 6.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+      <a-entity position="0 0 8.16">
+        <a-entity gltf-model="assets/GP.glb" position="-3.738 0.305 -4" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-5.17691 0.305 -4" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-5.17691 0.305 -5.80677" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-6.59668 0.305 -5.80677" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-6.59668 0.305 -2.67321" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-6.59668 0.305 -4.13467" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-4.09672 0.305 -3.76701" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-8.00431 0.305 -3.76701" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-8.00431 0.305 -5.39433" rotation="0 90 0"></a-entity><a-entity gltf-model="assets/GP.glb" position="-8.68475 0.305 -4.46735" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-0.738 0.305 -4" rotation="0 20 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="-2.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="1.138 0.305 -4" rotation="0 35 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="3.138 0.305 -4" rotation="0 90 0"></a-entity>
+        <a-entity gltf-model="assets/GP.glb" position="4.138 0.305 -4" rotation="0 90 0"></a-entity>
+      </a-entity>
+    </a-entity>
+    
+    <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" scale="5.09 5.75 1" color="#5e3f1d"></a-plane>
+    <a-entity>
+    <a-entity gltf-model="assets/CRT.glb" position="0 0.26832 -3.92616" rotation="0 -118.96000000000001 0"></a-entity>
+
+    <a-entity light="color: #000000; intensity: 0.7; type: point" position="0 2 0"></a-entity>
+    </a-entity>
+
+    <a-sky color="blue"></a-sky>
+    <a-camera position="3.0465975414463173 1.6 -0.5046341436336738" rotation="-38.27358071473902 -4.583662361046614 0"> </a-camera>
+  </a-scene>
+</body>
+
 </html>
+
