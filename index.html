@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@5.x.x/dist/aframe-event-set-component.min.js"></script>
 </head>
 
 <body>
@@ -18,9 +19,9 @@
       <a-assets-item id="CRT" src="assets/CRT.glb"></a-assets-item>
       <a-assets-item id="BT" src="assets/BT.glb"></a-assets-item>
       <a-assets-item id="Lantern" src="assets/Lantern.glb"></a-assets-item>
-      <a-assets-item id="vapor_vapor" src="assets/vapor_vapor.gltf">
+      <a-assets-item id="vapor_vapor" src="assets/vapor_vapor.gltf"></a-assets-item>
       <a-assets-item id="JS" src="assets/JS.glb"></a-assets-item>
-      </a-assets-item></a-assets>
+      </a-assets>
 
 
 
@@ -296,13 +297,13 @@
     </a-entity>
 
     <a-entity gltf-model="assets/BT.glb" scale="4 4 4" position="0.81139 4.85617 -3.51848"></a-entity>
-    <a-entity gltf-model="assets/JS.glb" position="0.81139 4.85617 -3.51848"></a-entity>
+    
     <a-entity gltf-model="assets/vapor_vapor.gltf" position="0.81139 4.85617 -3.51848"></a-entity>
 
 
 
     <a-sky color="blue"></a-sky>
-    <a-camera position="-3.8147657773737667 1.6 0.42725861024560013" rotation="-16.042818263663055 -45.26366581533506 0" fov="70">
+    <a-camera position="-7.08088667089498 1.6 -1.525054525354542" rotation="2.177239621497146 -82.9642887349431 0" fov="70">
     </a-camera>
     <a-entity light="color: #000000; groundColor: #000000; intensity: 2.5; type: hemisphere" position="0 2.23379 0"></a-entity><a-entity geometry="primitive: cylinder" position="0.44579 9.81805 -3.48274" scale="4 1 4"></a-entity></a-scene>
 </body>
