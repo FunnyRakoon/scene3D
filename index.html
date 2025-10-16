@@ -278,8 +278,29 @@
     </a-entity>
     </a-entity><a-entity position="-2.59072 0 -0.58883" rotation="0 -82.66291293470438 0">
       <a-entity gltf-model="assets/CRT.glb" position="-1.753 0.26832 -0.68925" rotation="0 146.25549861627445 0"></a-entity>
-      <a-entity light="color: #7a7aff; intensity: 0.04; type: point" position="-2.07711 0.51369 -0.33902"></a-entity><a-entity light="angle: 61.31; color: #d1d1ff; decay: 5.56; distance: 1.96; intensity: 0.8; type: spot" position="-1.99557 0.51369 -0.37994" rotation="0 145.86703323117575 0"></a-entity>
-      <a-entity position="-1.9372 0.48185 -0.42843" geometry="" material="emissive: #b9b8ff; emissiveIntensity: 6.89" rotation="0 -123.39161780157896 0" scale="0.07 0.47 0.54">
+      
+      <a-entity id="pointLight" light="color: #7a7aff; intensity: 0.04; type: point" position="-2.07711 0.51369 -0.33902"></a-entity>
+      
+      <a-entity id="spotLight" 
+        light="angle: 61.31; color: #d1d1ff; decay: 5.56; distance: 1.96; intensity: 0; type: spot" 
+        position="-1.99557 0.51369 -0.37994" 
+        rotation="0 145.86703323117575 0">
+
+      </a-entity>
+      
+      <a-entity 
+        class="clickable"
+        position="-1.9372 0.48185 -0.42843" 
+        geometry="primitive: box"
+        material="emissive: #b9b8ff; emissiveIntensity: 0" 
+        rotation="0 -123.39161780157896 0" 
+        scale="0.07 0.47 0.54"
+        animation__emissive-enter="property: material.emissiveIntensity; to: 6.8; startEvents: mouseenter; dur: 200;"
+        animation__emissive-leave="property: material.emissiveIntensity; to: 0; startEvents: mouseleave; dur: 200;"
+        animation__enter="_event: mouseenter; _target: #spotLight; intensity: 8"
+        animation__leave="_event: mouseleave; _target: #spotLight; intensity: 0">
+      </a-entity>
+</a-entity>
 
     </a-entity>
     </a-entity><a-entity position="1.57447 0 -0.81907" rotation="0 -82.66291293470438 0">
@@ -300,11 +321,12 @@
     
     <a-entity gltf-model="assets/vapor_vapor.gltf" position="0.81139 4.85617 -3.51848"></a-entity>
 
-
+        
 
     <a-sky color="blue"></a-sky>
-    <a-camera position="-7.08088667089498 1.6 -1.525054525354542" rotation="2.177239621497146 -82.9642887349431 0" fov="70">
-    </a-camera>
+    <a-camera position="-4.606905422167691 1.6 -0.031012559343593163" rotation="-12.948846169956603 -62.45239966925973 0" fov="70">
+      <a-cursor raycaster="objects: .clickable"></a-cursor>
+</a-camera>
     <a-entity light="color: #000000; groundColor: #000000; intensity: 2.5; type: hemisphere" position="0 2.23379 0"></a-entity><a-entity geometry="primitive: cylinder" position="0.44579 9.81805 -3.48274" scale="4 1 4"></a-entity></a-scene>
 </body>
 
